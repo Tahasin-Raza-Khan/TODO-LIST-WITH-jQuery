@@ -9,10 +9,10 @@ function addItem() {
   let listItem = $('<li>', {
     'class': 'list-group-item',
     text: inpNewTask.val()
-  })
+  });
   listItem.click(() => {
     listItem.toggleClass('done');
-  })
+  });
   ulTasks.append(listItem);
   inpNewTask.val('');
   toggleInputButtons();
